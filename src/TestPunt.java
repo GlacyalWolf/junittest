@@ -19,16 +19,16 @@ public class TestPunt {
         // comprova que el constructor Punt() deixi a 0 els valors
         Punt p = new Punt();
         p.setX(12);
-        assertEquals(0, p.getX()); // Afirma que la coordenada x val 0
-        assertEquals(0, p.getY());
+        assertEquals(12, p.getX()); // Afirma que la coordenada x val 0
+
     }
     @Test
     public void testSetYAssignationCorrectament() {
         // comprova que el constructor Punt() deixi a 0 els valors
         Punt p = new Punt();
-        p.setY(12);
-        assertEquals(0, p.getX()); // Afirma que la coordenada x val 0
-        assertEquals(0, p.getY());
+        p.setY(6);
+
+        assertEquals(6, p.getY());
     }
     @Test
     public void testPuntDefinit() {
@@ -36,6 +36,13 @@ public class TestPunt {
         Punt p = new Punt(3,4);
         assertEquals(3, p.getX());
         assertEquals(4, p.getY());
+    }
+    @Test
+    public void testSuma() {
+        // comprova el metode suma
+        Punt p = new Punt();
+        Punt a=new Punt();
+        p.suma(a);
     }
 
 
