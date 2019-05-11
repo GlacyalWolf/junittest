@@ -1,0 +1,4 @@
+Exercici 5
+
+Els test unitaris soposadament son test que estan fets per separar el codi i analitzarlo en parts
+molt petites si dona més de un error no es un test unitari ja que segurament sigui massa extens.
