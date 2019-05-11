@@ -1,0 +1,5 @@
+Exercici 4
+
+Suposadament i el get o el set dona error o contribueix a un error ells recomanen que s'apliqui un test, pero
+també s'ha de tenir en compte la experienciá i la confianca en le teu codi que tinguis.
+

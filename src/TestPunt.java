@@ -44,6 +44,7 @@ public class TestPunt {
         Punt a=new Punt();
         p.suma(a);
     }
+    
 
 
     public static void main(String args[]) {
