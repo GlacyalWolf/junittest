@@ -14,6 +14,10 @@ public class TestSegment {
         Segment s=new Segment(1,2,3,5);
         s.Longitud(s);
     }
+    @Test (expected= IllegalArgumentException.class)
+    public void testExepcioMenorDe0(){
+        Segment s=new Segment(-2,2,3,5);
+    }
     public static void main(String args[]) {
         org.junit.runner.JUnitCore.main("TestSegment");
     }

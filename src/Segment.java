@@ -6,11 +6,21 @@ public class Segment {
     private int y2;
 
     public Segment(){}
-    public Segment(int x1,int x2,int y1,int y2){
-        this.coord1[0]=x1;
-        this.coord2[0]=x2;
-        this.coord1[1]=y1;
-        this.coord2[1]=y2;
+    public Segment(int x1,int x2,int y1,int y2)throws IllegalArgumentException{
+        try {
+            if (x1>=0 && y1>=0 && x2>=0 && y2>=0) {
+                this.coord1[0] = x1;
+                this.coord2[0] = x2;
+                this.coord1[1] = y1;
+                this.coord2[1] = y2;
+            }
+            else {
+                throw new IllegalArgumentException();
+            }
+        }
+        catch(IllegalArgumentException e){
+            System.out.println("Error");
+        }
     }
 
     public int getX1() {

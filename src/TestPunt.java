@@ -44,6 +44,11 @@ public class TestPunt {
         Punt a=new Punt();
         p.suma(a);
     }
+    @Test (expected = IllegalArgumentException.class)
+    public void testExceptionMenorQue0(){
+        Punt p = new Punt(-2,4);
+    }
+
     
 
 

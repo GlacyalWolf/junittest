@@ -5,9 +5,19 @@ public class Punt {
 
     }
 
-    public Punt(int x, int y) {
-        this.coord[0]=x;
-        this.coord[1]=y;
+    public Punt(int x, int y)throws IllegalArgumentException {
+        try {
+            if (x>=0 && y>=0) {
+                this.coord[0] = x;
+                this.coord[1] = y;
+            }
+            else{
+                throw new IllegalArgumentException();
+            }
+        }
+        catch(IllegalArgumentException e){
+
+        }
     }
 
     public int getX(){
